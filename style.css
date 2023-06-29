@@ -21,7 +21,7 @@ body{
 
 @media screen and (max-width:992px){
     .banner{
-        height: 100vh;
+        height: 760px;
         background-image:url("/images/asset 2.svg"),url("/images/asset 0.svg");
         background-repeat: no-repeat;
         background-position: bottom right -210px,bottom center;
@@ -43,7 +43,7 @@ body{
 
 @media screen and (max-width:425px){
     .banner{
-        height: 920px;
+        height: 865px;
         background-image:url("/images/asset 1.svg");
         background-repeat: no-repeat;
         background-position: bottom right;
@@ -53,7 +53,7 @@ body{
 
 @media screen and (max-width:320px){
     .banner{
-        height: 820px;
+        height: 900px;
         background-image:url("/images/asset 1.svg");
         background-repeat: no-repeat;
         background-position: bottom right;
