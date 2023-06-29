@@ -31,10 +31,10 @@ body{
 
 @media screen and (min-width:426px) and (max-width:768px){
     .banner{
-        height: 900px;
+        height:140vh;
         background-image:url("/images/asset 2.svg"),url("/images/asset 0.svg");
         background-repeat: no-repeat;
-        background-position: bottom right -210px,center;
+        background-position: bottom right -210px,bottom center;
         
     }
     
@@ -43,11 +43,11 @@ body{
 
 @media screen and (max-width:425px){
     .banner{
-        height: 798px;
+        height: 810px;
         background-image:url("/images/asset 1.svg");
         background-repeat: no-repeat;
         background-position: bottom right;
-        background-size: 400px;
+        background-size: 360px;
     }
 }
 
