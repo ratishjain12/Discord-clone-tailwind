@@ -8,13 +8,13 @@ body{
     font-family: 'Belanosima', arial, helvetica, sans-serif;
 }
 .banner{
-    background-image: url(images/asset\ 2.svg),url(images/asset\ 1.svg),url(images/asset\ 0.svg);
+    background-image: url("/images/asset 2.svg"),url("/images/asset 1.svg"),url("/images/asset 0.svg");
     background-repeat: no-repeat;
     background-position: bottom right -210px,bottom left -290px,center;
 }
 
 .getstarted{
-    background-image: url("images/asset\ 7.svg");
+    background-image: url("/images/asset 7.svg");
     background-repeat: no-repeat;
     background-position: top center;
 }
@@ -22,7 +22,7 @@ body{
 @media screen and (max-width:992px){
     .banner{
         height: 100vh;
-        background-image:url(images/asset\ 2.svg),url(images/asset\ 0.svg);
+        background-image:url("/images/asset 2.svg"),url("/images/asset 0.svg");
         background-repeat: no-repeat;
         background-position: bottom right -210px,center;
     }
@@ -32,7 +32,7 @@ body{
 @media screen and (min-width:426px) and (max-width:768px){
     .banner{
         height: 900px;
-        background-image:url(images/asset\ 2.svg),url(images/asset\ 0.svg);
+        background-image:url("/images/asset 2.svg"),url("/images/asset 0.svg");
         background-repeat: no-repeat;
         background-position: bottom right -210px,center;
         
@@ -44,7 +44,7 @@ body{
 @media screen and (max-width:425px){
     .banner{
         height: 798px;
-        background-image:url(images/asset\ 1.svg);
+        background-image:url("/images/asset 1.svg");
         background-repeat: no-repeat;
         background-position: bottom right;
         background-size: 400px;
