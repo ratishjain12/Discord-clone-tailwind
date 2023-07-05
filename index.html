@@ -1,192 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Discord Clone</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="overflow-x-hidden">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="overflow-x-hidden">
     <div class="bg-[#404eed] h-[630px] min-w-full banner">
-
-    <nav class="container mx-auto px-4 flex justify-between py-2 items-center lg:container">
-        <img src="images/discord-nav.png" class="text-white w-[120px]"/>
+      <nav
+        class="container mx-auto px-4 flex justify-between py-2 items-center lg:container"
+      >
+        <img src="images/discord-nav.png" class="text-white w-[120px]" />
         <ul class="hidden md:visible justify-between lg:flex text-lg">
-            <li class=" mx-6 cursor-pointer hover:underline text-white">Download</li>
-            <li class=" mx-6 cursor-pointer hover:underline text-white">Nitro</li>
-            <li class=" mx-6 cursor-pointer hover:underline text-white">Discover</li>
-            <li class=" mx-6 cursor-pointer hover:underline text-white">Safety</li>
-            <li class=" mx-6 cursor-pointer hover:underline text-white">Support</li>
-            <li class=" mx-6 cursor-pointer hover:underline text-white">Blog</li>
-            <li class=" mx-6 cursor-pointer hover:underline text-white">Careers</li>
+          <li class="mx-6 cursor-pointer hover:underline text-white link">
+            Download
+          </li>
+          <li class="mx-6 cursor-pointer hover:underline text-white link">
+            Nitro
+          </li>
+          <li class="mx-6 cursor-pointer hover:underline text-white link">
+            Discover
+          </li>
+          <li class="mx-6 cursor-pointer hover:underline text-white link">
+            Safety
+          </li>
+          <li class="mx-6 cursor-pointer hover:underline text-white link">
+            Support
+          </li>
+          <li class="mx-6 cursor-pointer hover:underline text-white link">
+            Blog
+          </li>
+          <li class="mx-6 cursor-pointer hover:underline text-white link">
+            Careers
+          </li>
         </ul>
-        <div class="right flex items-center space-x-4 relative">
-            <button class="bg-white text-black px-4 py-2 rounded-3xl">Login</button>
-            <div id="hamburger-menu" class="flex  flex-col items-center  text-white cursor-pointer z-50 lg:hidden">
-                <div class="w-8 h-1 bg-white mb-1 "></div>
-                <div class="w-8 h-1 bg-white mb-1 "></div>
-                <div class="w-8 h-1 bg-white mb-1 "></div> 
-                
-            </div>
-          
-            <div id="close" class="hidden z-50 cursor-pointer fixed top-3 right-6">
-                <i class="fa-solid fa-xmark text-gray-800"></i>  
-            </div>
+        <div class="right flex items-center space-x-4 relative link">
+          <button class="bg-white text-black px-4 py-2 rounded-3xl">
+            Login
+          </button>
+          <div
+            id="hamburger-menu"
+            class="flex flex-col items-center text-white cursor-pointer z-50 lg:hidden"
+          >
+            <div class="w-8 h-1 bg-white mb-1"></div>
+            <div class="w-8 h-1 bg-white mb-1"></div>
+            <div class="w-8 h-1 bg-white mb-1"></div>
+          </div>
 
-            <div id="navbar" class=" fixed top-0 right-0 w-64 h-full bg-white translate-x-full transition-transform duration-300 ease-in-out px-3 py-2 rounded-tl-lg flex flex-col justify-between shadow-xl">
-                <div class="top-section">
-                    <img src="images/asset 18.svg" class="w-[100px]"/>
-                    <div class="line bg-black opacity-10 mx-1 my-4 h-[2px]"></div>
-                    <ul id="menu" class="list-none p-0">
-                        <li class="py-2"><a href="#" class="text-gray-800 hover:underline">Home</a></li>
-                        <li class="py-2"><a href="#" class="text-gray-800 hover:underline">Download</a></li>
-                        <li class="py-2"><a href="#" class="text-gray-800 hover:underline">Nitro</a></li>
-                        <li class="py-2"><a href="#" class="text-gray-800 hover:underline">Discover</a></li>
-                        <li class="py-2"><a href="#" class="text-gray-800 hover:underline">Safety</a></li>
-                        <li class="py-2"><a href="#" class="text-gray-800 hover:underline">Mod Academy</a></li>
-                        <li class="py-2"><a href="#" class="text-gray-800 hover:underline">Support</a></li>
-                        <li class="py-2"><a href="#" class="text-gray-800 hover:underline">Blog</a></li>
-                        <li class="py-2"><a href="#" class="text-gray-800 hover:underline">Careers</a></li>
-                    </ul>
-                </div>
-                    <button class="px-12 py-4 bg-blue-600 text-xs rounded-full text-white my-12">Download for Windows</button>
-            </div>
-        </div>
-        
-        
-     </nav>
+          <div
+            id="close"
+            class="hidden z-50 cursor-pointer fixed top-3 right-6"
+          >
+            <i class="fa-solid fa-xmark text-gray-800"></i>
+          </div>
 
-     <h1 class=" text-5xl sm:text-6xl md:text-7xl text-center text-white py-[4rem]">IMAGINE A PLACE...</h1>
-     <p class="text-white text-left font-extralight px-6 sm:px-[30px] text-md md:text-center text-lg lg:px-[320px] ">...where you can belong to a school club, a gaming group, or a worldwide art community. Where just you and a handful of friends can spend time together. A place that makes it easy to talk every day and hang out more often.</p>
-     <div class="flex flex-col gap-y-4 md:flex-row gap-x-2 justify-center mt-12">
-        <div class="flex flex-col gap-y-4 mx-2 sm:max-w-lg ml-4 md:flex-row max-w-xs lg:max-w-4xl gap-x-3">
-            <button class=" bg-white rounded-full flex flex-row px-12 space-x-2 items-center py-4 hover:text-blue-400 hover:shadow-2xl sm:max-w-sm">
-                <img src="images/asset 12.svg" class="w-[20px]">
-                <p class="text-base md:text-lg">Download for Windows</p>
-            
+          <div
+            id="navbar"
+            class="fixed top-0 right-0 w-64 h-full bg-white translate-x-full transition-transform duration-300 ease-in-out px-3 py-2 rounded-tl-lg flex flex-col justify-between shadow-xl"
+          >
+            <div class="top-section">
+              <img src="images/asset 18.svg" class="w-[100px]" />
+              <div class="line bg-black opacity-10 mx-1 my-4 h-[2px]"></div>
+              <ul id="menu" class="list-none p-0">
+                <li class="py-2">
+                  <a href="#" class="text-gray-800 hover:underline">Home</a>
+                </li>
+                <li class="py-2">
+                  <a href="#" class="text-gray-800 hover:underline">Download</a>
+                </li>
+                <li class="py-2">
+                  <a href="#" class="text-gray-800 hover:underline">Nitro</a>
+                </li>
+                <li class="py-2">
+                  <a href="#" class="text-gray-800 hover:underline">Discover</a>
+                </li>
+                <li class="py-2">
+                  <a href="#" class="text-gray-800 hover:underline">Safety</a>
+                </li>
+                <li class="py-2">
+                  <a href="#" class="text-gray-800 hover:underline"
+                    >Mod Academy</a
+                  >
+                </li>
+                <li class="py-2">
+                  <a href="#" class="text-gray-800 hover:underline">Support</a>
+                </li>
+                <li class="py-2">
+                  <a href="#" class="text-gray-800 hover:underline">Blog</a>
+                </li>
+                <li class="py-2">
+                  <a href="#" class="text-gray-800 hover:underline">Careers</a>
+                </li>
+              </ul>
+            </div>
+            <button
+              class="px-12 py-4 bg-blue-600 text-xs rounded-full text-white my-12"
+            >
+              Download for Windows
             </button>
-            <button class="bg-black rounded-full px-12 py-4   text-white  text-lg hover:bg-gray-700 hover:shadow-2xl sm:max-w-sm">
-                <p class="text-sm md:text-lg ">Open Discord in your browser</p>
-            </button>
+          </div>
         </div>
-        
-     </div>
+      </nav>
+
+      <h1
+        class="text-5xl sm:text-6xl md:text-7xl text-center text-white py-[4rem] anim"
+      >
+        IMAGINE A PLACE...
+      </h1>
+      <p
+        class="text-white text-left font-extralight px-6 sm:px-[30px] text-md md:text-center text-lg lg:px-[320px] anim"
+      >
+        ...where you can belong to a school club, a gaming group, or a worldwide
+        art community. Where just you and a handful of friends can spend time
+        together. A place that makes it easy to talk every day and hang out more
+        often.
+      </p>
+      <div
+        class="flex flex-col gap-y-4 md:flex-row gap-x-2 justify-center mt-12 anim"
+      >
+        <div
+          class="flex flex-col gap-y-4 mx-2 sm:max-w-lg ml-4 md:flex-row max-w-xs lg:max-w-4xl gap-x-3"
+        >
+          <button
+            class="bg-white rounded-full flex flex-row px-12 space-x-2 items-center py-4 hover:text-blue-400 hover:shadow-2xl sm:max-w-sm"
+          >
+            <img src="images/asset 12.svg" class="w-[20px]" />
+            <p class="text-base md:text-lg">Download for Windows</p>
+          </button>
+          <button
+            class="bg-black rounded-full px-12 py-4 text-white text-lg hover:bg-gray-700 hover:shadow-2xl sm:max-w-sm"
+          >
+            <p class="text-sm md:text-lg">Open Discord in your browser</p>
+          </button>
+        </div>
+      </div>
     </div>
 
-    <section class="inviteonly pt-8 ">
-        <div class="pt-20 pb-24 md:grid grid-cols-2 max-w-7xl gap-6 mx-auto">
-            <div class="left max-w-3xl md:max-w-4xl gap-20">
-                <img src="images/asset 3.svg" alt="" class="w-[1000px]">
-            </div>
-            <div class="right pl-5 py-10 md: px-12 ml-12">
-                <h1 class="text-xl sm:text-4xl/[3.4rem] text-gray-950 font-bold md:text-4xl/[3.4rem] max-w-md">Create an invite-only place where you belong</h1>
-                <p class="text-gray-500 mt-4 text-lg md:text-lg">Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day without clogging up a group chat.</p>
-            </div>
+    <section class="inviteonly pt-8">
+      <div
+        class="pt-20 pb-24 md:grid grid-cols-2 max-w-7xl gap-6 mx-auto"
+        id="section1"
+      >
+        <div class="left max-w-3xl md:max-w-4xl gap-20">
+          <img src="images/asset 3.svg" alt="" class="w-[1000px]" />
         </div>
+        <div class="right pl-5 py-10 md: px-12 ml-12">
+          <h1
+            class="text-xl sm:text-4xl/[3.4rem] text-gray-950 font-bold md:text-4xl/[3.4rem] max-w-md"
+          >
+            Create an invite-only place where you belong
+          </h1>
+          <p class="text-gray-500 mt-4 text-lg md:text-lg">
+            Discord servers are organized into topic-based channels where you
+            can collaborate, share, and just talk about your day without
+            clogging up a group chat.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <section class="hangingout mt-20 bg-[#f6f6f6] ">
-       
-        <div class=" pt-20 pb-24 md:grid grid-cols-2 max-w-7xl gap-6 mx-auto">
-            <div class="left pl-5 py-20 md:py-20 px-2">
-                <h1 class="text-xl sm:text-4xl/[3.4rem] text-gray-950 font-bold md:text-5xl/[3.4rem] max-w-md">Where hanging out is easy</h1>
-                <p class="text-gray-500 mt-4  text-lg md:text-lg max-w-lg">Grab a seat in a voice channel when you’re free. Friends in your server can see you’re around and instantly pop in to talk without having to call.</p>
-            </div>
-            <div class="right">
-                <img src="images/asset 4.svg" alt="" class="w-[1000px]">
-            </div>
-            
+    <section class="hangingout mt-20 bg-[#f6f6f6]">
+      <div
+        class="pt-20 pb-24 md:grid grid-cols-2 max-w-7xl gap-6 mx-auto"
+        id="section2"
+      >
+        <div class="left pl-5 py-20 md:py-20 px-2">
+          <h1
+            class="text-xl sm:text-4xl/[3.4rem] text-gray-950 font-bold md:text-5xl/[3.4rem] max-w-md"
+          >
+            Where hanging out is easy
+          </h1>
+          <p class="text-gray-500 mt-4 text-lg md:text-lg max-w-lg">
+            Grab a seat in a voice channel when you’re free. Friends in your
+            server can see you’re around and instantly pop in to talk without
+            having to call.
+          </p>
         </div>
+        <div class="right">
+          <img src="images/asset 4.svg" alt="" class="w-[1000px]" />
+        </div>
+      </div>
     </section>
 
-    <section class=" fandom pt-8">
-        <div class="  pt-20 pb-24 md:grid grid-cols-2 max-w-7xl gap-6 mx-auto">
-
-            <div class="left md:max-w-7xl gap-20">
-                <img src="images/asset 5.svg" alt="" class="w-[1000px]">
-            </div>
-          
-            
-            <div class="right pl-5 py-10 md: px-12 ml-12">
-                <h1 class="text-xl sm:text-4xl/[3.4rem] text-gray-950 font-bold md:text-5xl/[3.4rem] max-w-md">From few to a fandom</h1>
-                <p class="text-gray-500 mt-4   text-lg md:text-lg">Get any community running with moderation tools and custom member access. Give members special powers, set up private channels, and more.</p>
-            </div>
+    <section class="fandom pt-8">
+      <div
+        class="pt-20 pb-24 md:grid grid-cols-2 max-w-7xl gap-6 mx-auto"
+        id="section3"
+      >
+        <div class="left md:max-w-7xl gap-20">
+          <img src="images/asset 5.svg" alt="" class="w-[1000px]" />
         </div>
+
+        <div class="right pl-5 py-10 md: px-12 ml-12">
+          <h1
+            class="text-xl sm:text-4xl/[3.4rem] text-gray-950 font-bold md:text-5xl/[3.4rem] max-w-md"
+          >
+            From few to a fandom
+          </h1>
+          <p class="text-gray-500 mt-4 text-lg md:text-lg">
+            Get any community running with moderation tools and custom member
+            access. Give members special powers, set up private channels, and
+            more.
+          </p>
+        </div>
+      </div>
     </section>
-    <section class="reliable mt-24">
-        <h1 class="text-5xl text-gray-950 text-center">RELIABLE TECH FOR STAYING CLOSE</h1>
-        <p class="text-center mt-4 px-2 text-gray-500 space-x-2 md:max-w-3xl mx-auto">Low-latency voice and video feels like you’re in the same room. Wave hello over video, watch friends stream their games, or gather up and have a drawing session with screen share.</p>
-        <img src="images/asset 6.svg" class="mx-auto w-[1200px]"/>
+    <section class="reliable mt-24" id="section4">
+      <h1 class="text-5xl text-gray-950 text-center">
+        RELIABLE TECH FOR STAYING CLOSE
+      </h1>
+      <p
+        class="text-center mt-4 px-2 text-gray-500 space-x-2 md:max-w-3xl mx-auto"
+      >
+        Low-latency voice and video feels like you’re in the same room. Wave
+        hello over video, watch friends stream their games, or gather up and
+        have a drawing session with screen share.
+      </p>
+      <img src="images/asset 6.svg" class="mx-auto w-[1200px]" />
     </section>
 
     <div class="getstarted mt-12 text-center pb-20">
-        <h1 class="text-3xl text-center pt-6 md:text-4xl">Ready to start your journey?</h1>
-        <button class="rounded-full px-12 py-4 mt-6 bg-[#5865f2] text-white self-center text-lg hover:shadow-2xl hover:opacity-95">Download for Windows</button>
+      <h1 class="text-3xl text-center pt-6 md:text-4xl">
+        Ready to start your journey?
+      </h1>
+      <button
+        class="rounded-full px-12 py-4 mt-6 bg-[#5865f2] text-white self-center text-lg hover:shadow-2xl hover:opacity-95"
+      >
+        Download for Windows
+      </button>
     </div>
-    <section class="footer bg-[#23272a] flex flex-col md:flex-row justify-evenly">
-        <div class="socials p-6 space-y-12">
-            <div class="state flex space-x-2">
-                <img src="images/asset 8.png" class="w-[30px]"/>
-                <p class="text-white text-sm">English, USA <i class="fa-solid fa-caret-down"></i></p>
-            </div>
-            <div class="social flex space-x-6 text-white">
-                <i class="fa-brands fa-instagram text-2xl"></i>
-                <i class="fa-brands fa-twitter text-2xl"></i>
-                <i class="fa-brands fa-facebook text-2xl"></i>
-                <i class="fa-brands fa-youtube text-2xl"></i>
-                <i class="fa-brands fa-tiktok text-2xl"></i>
-            </div>
+    <section
+      class="footer bg-[#23272a] flex flex-col md:flex-row justify-evenly"
+    >
+      <div class="socials p-6 space-y-12">
+        <div class="state flex space-x-2">
+          <img src="images/asset 8.png" class="w-[30px]" />
+          <p class="text-white text-sm">
+            English, USA <i class="fa-solid fa-caret-down"></i>
+          </p>
         </div>
-        <div class="footer-items flex flex-wrap p-6  gap-12">
-            <div class="product w-[160px] sm:w-[100px] space-y-2">
-                <p class="text-blue-700 text-md">Product</p>
-                <p class="text-white hover:underline">Download</p>
-                <p class="text-white hover:underline">Nitro</p>
-                <p class="text-white hover:underline">Status</p>
-            </div>
-
-            <div class="product w-[160px] sm:w-[100px] md:w-[120px] space-y-2">
-                <p class="text-blue-700 text-md font-light">Company</p>
-                <p class="text-white hover:underline">About</p>
-                <p class="text-white hover:underline">Jobs</p>
-                <p class="text-white hover:underline">Brand</p>
-                <p class="text-white hover:underline">Newsroom</p>
-            </div>
-
-            <div class="product w-[160px] sm:w-[100px] space-y-2">
-                <p class="text-blue-700 text-md font-light">Resources</p>
-                <p class="text-white hover:underline">College</p>
-                <p class="text-white hover:underline">Support</p>
-                <p class="text-white hover:underline">Safety</p>
-                <p class="text-white hover:underline">Blog</p>
-                <p class="text-white hover:underline">Feedback</p>
-                <p class="text-white hover:underline">Build</p>
-                <p class="text-white hover:underline">StreamKit</p>
-                <p class="text-white hover:underline">Creators</p>
-                <p class="text-white hover:underline">Community</p>
-                <p class="text-white hover:underline">Offical 3rd Party Merch</p>
-            </div>
-            <div class="product w-[160px] sm:w-[90px] space-y-2">
-                <p class="text-blue-700 text-md font-light">Policies</p>
-                <p class="text-white hover:underline">Terms</p>
-                <p class="text-white hover:underline">Privacy</p>
-                <p class="text-white hover:underline">Cookie Settings</p>
-                <p class="text-white hover:underline">Guidelines</p>
-                <p class="text-white hover:underline">Acknowledgements</p>
-                <p class="text-white hover:underline">Licenses</p>
-                <p class="text-white hover:underline">Moderation</p>
-                <p class="text-white hover:underline">Company Information</p>
-                
-            </div>
+        <div class="social flex space-x-6 text-white">
+          <i class="fa-brands fa-instagram text-2xl"></i>
+          <i class="fa-brands fa-twitter text-2xl"></i>
+          <i class="fa-brands fa-facebook text-2xl"></i>
+          <i class="fa-brands fa-youtube text-2xl"></i>
+          <i class="fa-brands fa-tiktok text-2xl"></i>
         </div>
+      </div>
+      <div class="footer-items flex flex-wrap p-6 gap-12">
+        <div class="product w-[160px] sm:w-[100px] space-y-2">
+          <p class="text-blue-700 text-md">Product</p>
+          <p class="text-white hover:underline">Download</p>
+          <p class="text-white hover:underline">Nitro</p>
+          <p class="text-white hover:underline">Status</p>
+        </div>
+
+        <div class="product w-[160px] sm:w-[100px] md:w-[120px] space-y-2">
+          <p class="text-blue-700 text-md font-light">Company</p>
+          <p class="text-white hover:underline">About</p>
+          <p class="text-white hover:underline">Jobs</p>
+          <p class="text-white hover:underline">Brand</p>
+          <p class="text-white hover:underline">Newsroom</p>
+        </div>
+
+        <div class="product w-[160px] sm:w-[100px] space-y-2">
+          <p class="text-blue-700 text-md font-light">Resources</p>
+          <p class="text-white hover:underline">College</p>
+          <p class="text-white hover:underline">Support</p>
+          <p class="text-white hover:underline">Safety</p>
+          <p class="text-white hover:underline">Blog</p>
+          <p class="text-white hover:underline">Feedback</p>
+          <p class="text-white hover:underline">Build</p>
+          <p class="text-white hover:underline">StreamKit</p>
+          <p class="text-white hover:underline">Creators</p>
+          <p class="text-white hover:underline">Community</p>
+          <p class="text-white hover:underline">Offical 3rd Party Merch</p>
+        </div>
+        <div class="product w-[160px] sm:w-[90px] space-y-2">
+          <p class="text-blue-700 text-md font-light">Policies</p>
+          <p class="text-white hover:underline">Terms</p>
+          <p class="text-white hover:underline">Privacy</p>
+          <p class="text-white hover:underline">Cookie Settings</p>
+          <p class="text-white hover:underline">Guidelines</p>
+          <p class="text-white hover:underline">Acknowledgements</p>
+          <p class="text-white hover:underline">Licenses</p>
+          <p class="text-white hover:underline">Moderation</p>
+          <p class="text-white hover:underline">Company Information</p>
+        </div>
+      </div>
     </section>
     <div class="bottom-section bg-[#23272a] p-5">
-        <div class="line bg-blue-700 mx-4 h-[1px] my-4"></div>
-        <div class="flex justify-between items-center mx-4">
-            <img src="images/Discord-logo.png" class="w-[180px]"/>
-            <button class="rounded-full px-4 py-4 mt-6 bg-[#5865f2] text-white self-center text-lg hover:shadow-2xl hover:opacity-95">Sign up</button>
-        </div>
+      <div class="line bg-blue-700 mx-4 h-[1px] my-4"></div>
+      <div class="flex justify-between items-center mx-4">
+        <img src="images/Discord-logo.png" class="w-[180px]" />
+        <button
+          class="rounded-full px-4 py-4 mt-6 bg-[#5865f2] text-white self-center text-lg hover:shadow-2xl hover:opacity-95"
+        >
+          Sign up
+        </button>
+      </div>
     </div>
-    <script src="/script.js" defer type="module"></script>
-    <script src="https://kit.fontawesome.com/ae4b03396b.js" crossorigin="anonymous"></script>
-</body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="/script.js" type="module"></script>
+    <script
+      src="https://kit.fontawesome.com/ae4b03396b.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

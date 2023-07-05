@@ -1,65 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Belanosima&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-body{
-    font-family: 'Belanosima', arial, helvetica, sans-serif;
+body {
+  scroll-behavior: smooth;
 }
-.banner{
-    background-image: url("/images/asset 2.svg"),url("/images/asset 1.svg"),url("/images/asset 0.svg");
+body {
+  font-family: "Belanosima", arial, helvetica, sans-serif;
+}
+.banner {
+  background-image: url("/images/asset 2.svg"), url("/images/asset 1.svg"),
+    url("/images/asset 0.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right -210px, bottom left -290px, bottom center;
+}
+
+.getstarted {
+  background-image: url("/images/asset 7.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+@media screen and (max-width: 992px) {
+  .banner {
+    height: 760px;
+    background-image: url("/images/asset 2.svg"), url("/images/asset 0.svg");
     background-repeat: no-repeat;
-    background-position: bottom right -210px,bottom left -290px,bottom center;
+    background-position: bottom right -210px, bottom center;
+  }
 }
 
-.getstarted{
-    background-image: url("/images/asset 7.svg");
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .banner {
+    height: 120vh;
+    background-image: url("/images/asset 2.svg"), url("/images/asset 0.svg");
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: bottom right -210px, bottom center;
+  }
 }
 
-@media screen and (max-width:992px){
-    .banner{
-        height: 760px;
-        background-image:url("/images/asset 2.svg"),url("/images/asset 0.svg");
-        background-repeat: no-repeat;
-        background-position: bottom right -210px,bottom center;
-    }
-    
+@media screen and (max-width: 425px) {
+  .banner {
+    height: 865px;
+    background-image: url("/images/asset 1.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 360px;
+  }
 }
 
-@media screen and (min-width:426px) and (max-width:768px){
-    .banner{
-        height:120vh;
-        background-image:url("/images/asset 2.svg"),url("/images/asset 0.svg");
-        background-repeat: no-repeat;
-        background-position: bottom right -210px,bottom center;
-        
-    }
-    
+@media screen and (max-width: 320px) {
+  .banner {
+    height: 900px;
+    background-image: url("/images/asset 1.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 360px;
+  }
 }
-
-
-@media screen and (max-width:425px){
-    .banner{
-        height: 865px;
-        background-image:url("/images/asset 1.svg");
-        background-repeat: no-repeat;
-        background-position: bottom right;
-        background-size: 360px;
-    }
-}
-
-@media screen and (max-width:320px){
-    .banner{
-        height: 900px;
-        background-image:url("/images/asset 1.svg");
-        background-repeat: no-repeat;
-        background-position: bottom right;
-        background-size: 360px;
-    }
-}
-
-
-
